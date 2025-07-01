@@ -8,6 +8,11 @@ const port = 8000;
 
 app.use(userRouter);
 
+app.get("/",(req,res)=>{
+res.send("server is active")
+})
+
+
 connection()
 
 app.listen(port, (req, res) => {
