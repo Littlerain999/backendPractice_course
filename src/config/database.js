@@ -1,8 +1,6 @@
 const mongoose = require('mongoose');
 
-const MONGODB_URI = "mongodb://127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+2.5.3";
-  
-
+const MONGODB_URI = "mongodb+srv://aadityaskillspark:E0hJOFIR4Rvya0PX@cluster0.pojylot.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
 const connectDB = async () => {
     try {
         await mongoose.connect(MONGODB_URI );
